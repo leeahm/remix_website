@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/remix-logo.png" />
+    <link rel="stylesheet" href="https://use.typekit.net/yhe3ocg.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Video.js base CSS -->
+    <!-- <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" /> -->
+    <!-- Video.js City Theme -->
+    <!-- <link
+    href="https://unpkg.com/@videojs/themes@1/dist/city/index.css"
+    rel="stylesheet"
+    /> -->
+
+    <title>Remix</title>
+  </head>
+  <body>
+    <!-- emailJS -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      // may not need this one, since its initialized in modals.jsx
+      (function(){
+          emailjs.init({
+            publicKey: "4h2mXJA1vtns7Mauz",
+          });
+      })();
+    </script>
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <!-- video.js -->
+    <!-- <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script> -->
+  </body>
+</html>
